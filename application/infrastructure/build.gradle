@@ -1,0 +1,14 @@
+apply plugin: 'org.springframework.boot'
+
+
+dependencies {
+    implementation(
+            project(':domain'),
+            project(':usecase'),
+            project(':grpc-controller'),
+            project(':repository'),
+            project(':grpc-client'),
+            "org.springframework.boot:spring-boot-starter:$springBootVersion",
+            "net.devh:grpc-server-spring-boot-autoconfigure:$grpcSpringBootVersion"
+    )
+}

@@ -1,0 +1,9 @@
+grpc:
+  server:
+    port: "8085"
+
+logging:
+  level:
+    root: "INFO"
+    ru.rb: "DEBUG"
+

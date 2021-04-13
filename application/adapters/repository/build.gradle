@@ -1,0 +1,9 @@
+dependencies {
+    implementation(
+            project(':domain'),
+            project(':usecase'),
+            "org.springframework.boot:spring-boot-starter:$springBootVersion",
+            "org.mapstruct:mapstruct:1.4.2.Final"
+    )
+    annotationProcessor("org.mapstruct:mapstruct-processor:1.4.2.Final")
+}

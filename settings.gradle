@@ -1,0 +1,17 @@
+rootProject.name = 'Onion'
+
+include(":domain")
+include(":usecase")
+include(":infrastructure")
+include(":grpc-controller")
+include(":grpc-client")
+include(":repository")
+include(":rabbitmq-client")
+
+project(":infrastructure").projectDir = file("application/infrastructure")
+project(":grpc-controller").projectDir = file("application/adapters/controllers/grpc-controller")
+project(":grpc-client").projectDir = file("application/adapters/clients/grpc-client")
+project(":repository").projectDir = file("application/adapters/repository")
+project(":usecase").projectDir = file("application/usecase")
+project(":domain").projectDir = file("application/domain")
+project(":rabbitmq-client").projectDir = file("application/adapters/clients/rabbitmq-client")

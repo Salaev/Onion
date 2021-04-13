@@ -1,0 +1,25 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package ru.rb.onion.grpc.controller.proto;
+
+message SaveUserRequest {
+  string name = 1;
+  int32 age = 2;
+}
+message SaveUserResponse {
+  int64 id = 1;
+}
+
+message GetUserRequest {
+  string name = 1;
+}
+message GetUserResponse {
+  string name = 1;
+  int32 age = 2;
+  int64 identity = 3;
+}
+
+service UserServiceApi {
+  rpc saveUser(SaveUserRequest) returns (SaveUserResponse);
+  rpc getUser(GetUserRequest) returns (GetUserResponse);
+}
