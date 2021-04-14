@@ -1,8 +1,10 @@
 package ru.rb.onion.infrastructure;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import ru.rb.onion.UserEngCase;
 import ru.rb.onion.UserRusCase;
 import ru.rb.onion.domain.api.IdentityAdapter;
 import ru.rb.onion.domain.api.UserRepositoryAdapter;
@@ -11,18 +13,18 @@ import ru.rb.onion.domain.api.UserRepositoryAdapter;
 @ComponentScan("ru.rb.onion")
 public class Config {
 
-    @Bean("user_rus")
+    @Bean("user-rus-case")
     public UserRusCase getUserRusCase(
             UserRepositoryAdapter adapter,
-            IdentityAdapter identityAdapter) {
+            @Qualifier("identity_rus") IdentityAdapter identityAdapter) {
         return new UserRusCase(adapter, identityAdapter);
     }
 
-    @Bean("user_eng")
-    public UserRusCase getUserEngCase(
+    @Bean("user-eng-case")
+    public UserEngCase getUserEngCase(
             UserRepositoryAdapter adapter,
-            IdentityAdapter identityAdapter) {
-        return new UserRusCase(adapter, identityAdapter);
+            @Qualifier("identity_eng") IdentityAdapter identityAdapter) {
+        return new UserEngCase(adapter, identityAdapter);
     }
 
 }

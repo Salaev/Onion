@@ -19,68 +19,132 @@ public final class UserServiceApiGrpc {
   public static final String SERVICE_NAME = "ru.rb.onion.grpc.controller.proto.UserServiceApi";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<ru.rb.onion.grpc.controller.proto.SaveUserRequest,
-      ru.rb.onion.grpc.controller.proto.SaveUserResponse> getSaveUserMethod;
+  private static volatile io.grpc.MethodDescriptor<SaveUserRequest,
+      SaveUserResponse> getSaveRusUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "saveUser",
-      requestType = ru.rb.onion.grpc.controller.proto.SaveUserRequest.class,
-      responseType = ru.rb.onion.grpc.controller.proto.SaveUserResponse.class,
+      fullMethodName = SERVICE_NAME + '/' + "saveRusUser",
+      requestType = SaveUserRequest.class,
+      responseType = SaveUserResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<ru.rb.onion.grpc.controller.proto.SaveUserRequest,
-      ru.rb.onion.grpc.controller.proto.SaveUserResponse> getSaveUserMethod() {
-    io.grpc.MethodDescriptor<ru.rb.onion.grpc.controller.proto.SaveUserRequest, ru.rb.onion.grpc.controller.proto.SaveUserResponse> getSaveUserMethod;
-    if ((getSaveUserMethod = UserServiceApiGrpc.getSaveUserMethod) == null) {
+  public static io.grpc.MethodDescriptor<SaveUserRequest,
+      SaveUserResponse> getSaveRusUserMethod() {
+    io.grpc.MethodDescriptor<SaveUserRequest, SaveUserResponse> getSaveRusUserMethod;
+    if ((getSaveRusUserMethod = UserServiceApiGrpc.getSaveRusUserMethod) == null) {
       synchronized (UserServiceApiGrpc.class) {
-        if ((getSaveUserMethod = UserServiceApiGrpc.getSaveUserMethod) == null) {
-          UserServiceApiGrpc.getSaveUserMethod = getSaveUserMethod = 
-              io.grpc.MethodDescriptor.<ru.rb.onion.grpc.controller.proto.SaveUserRequest, ru.rb.onion.grpc.controller.proto.SaveUserResponse>newBuilder()
+        if ((getSaveRusUserMethod = UserServiceApiGrpc.getSaveRusUserMethod) == null) {
+          UserServiceApiGrpc.getSaveRusUserMethod = getSaveRusUserMethod = 
+              io.grpc.MethodDescriptor.<SaveUserRequest, SaveUserResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "ru.rb.onion.grpc.controller.proto.UserServiceApi", "saveUser"))
+                  "ru.rb.onion.grpc.controller.proto.UserServiceApi", "saveRusUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ru.rb.onion.grpc.controller.proto.SaveUserRequest.getDefaultInstance()))
+                  SaveUserRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ru.rb.onion.grpc.controller.proto.SaveUserResponse.getDefaultInstance()))
-                  .setSchemaDescriptor(new UserServiceApiMethodDescriptorSupplier("saveUser"))
+                  SaveUserResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new UserServiceApiMethodDescriptorSupplier("saveRusUser"))
                   .build();
           }
         }
      }
-     return getSaveUserMethod;
+     return getSaveRusUserMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<ru.rb.onion.grpc.controller.proto.GetUserRequest,
-      ru.rb.onion.grpc.controller.proto.GetUserResponse> getGetUserMethod;
+  private static volatile io.grpc.MethodDescriptor<GetUserRequest,
+      GetUserResponse> getGetRusUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "getUser",
-      requestType = ru.rb.onion.grpc.controller.proto.GetUserRequest.class,
-      responseType = ru.rb.onion.grpc.controller.proto.GetUserResponse.class,
+      fullMethodName = SERVICE_NAME + '/' + "getRusUser",
+      requestType = GetUserRequest.class,
+      responseType = GetUserResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<ru.rb.onion.grpc.controller.proto.GetUserRequest,
-      ru.rb.onion.grpc.controller.proto.GetUserResponse> getGetUserMethod() {
-    io.grpc.MethodDescriptor<ru.rb.onion.grpc.controller.proto.GetUserRequest, ru.rb.onion.grpc.controller.proto.GetUserResponse> getGetUserMethod;
-    if ((getGetUserMethod = UserServiceApiGrpc.getGetUserMethod) == null) {
+  public static io.grpc.MethodDescriptor<GetUserRequest,
+      GetUserResponse> getGetRusUserMethod() {
+    io.grpc.MethodDescriptor<GetUserRequest, GetUserResponse> getGetRusUserMethod;
+    if ((getGetRusUserMethod = UserServiceApiGrpc.getGetRusUserMethod) == null) {
       synchronized (UserServiceApiGrpc.class) {
-        if ((getGetUserMethod = UserServiceApiGrpc.getGetUserMethod) == null) {
-          UserServiceApiGrpc.getGetUserMethod = getGetUserMethod = 
-              io.grpc.MethodDescriptor.<ru.rb.onion.grpc.controller.proto.GetUserRequest, ru.rb.onion.grpc.controller.proto.GetUserResponse>newBuilder()
+        if ((getGetRusUserMethod = UserServiceApiGrpc.getGetRusUserMethod) == null) {
+          UserServiceApiGrpc.getGetRusUserMethod = getGetRusUserMethod = 
+              io.grpc.MethodDescriptor.<GetUserRequest, GetUserResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "ru.rb.onion.grpc.controller.proto.UserServiceApi", "getUser"))
+                  "ru.rb.onion.grpc.controller.proto.UserServiceApi", "getRusUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ru.rb.onion.grpc.controller.proto.GetUserRequest.getDefaultInstance()))
+                  GetUserRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ru.rb.onion.grpc.controller.proto.GetUserResponse.getDefaultInstance()))
-                  .setSchemaDescriptor(new UserServiceApiMethodDescriptorSupplier("getUser"))
+                  GetUserResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new UserServiceApiMethodDescriptorSupplier("getRusUser"))
                   .build();
           }
         }
      }
-     return getGetUserMethod;
+     return getGetRusUserMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<SaveUserRequest,
+      SaveUserResponse> getSaveEngUserMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "saveEngUser",
+      requestType = SaveUserRequest.class,
+      responseType = SaveUserResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<SaveUserRequest,
+      SaveUserResponse> getSaveEngUserMethod() {
+    io.grpc.MethodDescriptor<SaveUserRequest, SaveUserResponse> getSaveEngUserMethod;
+    if ((getSaveEngUserMethod = UserServiceApiGrpc.getSaveEngUserMethod) == null) {
+      synchronized (UserServiceApiGrpc.class) {
+        if ((getSaveEngUserMethod = UserServiceApiGrpc.getSaveEngUserMethod) == null) {
+          UserServiceApiGrpc.getSaveEngUserMethod = getSaveEngUserMethod = 
+              io.grpc.MethodDescriptor.<SaveUserRequest, SaveUserResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "ru.rb.onion.grpc.controller.proto.UserServiceApi", "saveEngUser"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  SaveUserRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  SaveUserResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new UserServiceApiMethodDescriptorSupplier("saveEngUser"))
+                  .build();
+          }
+        }
+     }
+     return getSaveEngUserMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<GetUserRequest,
+      GetUserResponse> getGetEngUserMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "getEngUser",
+      requestType = GetUserRequest.class,
+      responseType = GetUserResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<GetUserRequest,
+      GetUserResponse> getGetEngUserMethod() {
+    io.grpc.MethodDescriptor<GetUserRequest, GetUserResponse> getGetEngUserMethod;
+    if ((getGetEngUserMethod = UserServiceApiGrpc.getGetEngUserMethod) == null) {
+      synchronized (UserServiceApiGrpc.class) {
+        if ((getGetEngUserMethod = UserServiceApiGrpc.getGetEngUserMethod) == null) {
+          UserServiceApiGrpc.getGetEngUserMethod = getGetEngUserMethod = 
+              io.grpc.MethodDescriptor.<GetUserRequest, GetUserResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "ru.rb.onion.grpc.controller.proto.UserServiceApi", "getEngUser"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  GetUserRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  GetUserResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new UserServiceApiMethodDescriptorSupplier("getEngUser"))
+                  .build();
+          }
+        }
+     }
+     return getGetEngUserMethod;
   }
 
   /**
@@ -112,34 +176,62 @@ public final class UserServiceApiGrpc {
 
     /**
      */
-    public void saveUser(ru.rb.onion.grpc.controller.proto.SaveUserRequest request,
-        io.grpc.stub.StreamObserver<ru.rb.onion.grpc.controller.proto.SaveUserResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getSaveUserMethod(), responseObserver);
+    public void saveRusUser(SaveUserRequest request,
+                            io.grpc.stub.StreamObserver<SaveUserResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getSaveRusUserMethod(), responseObserver);
     }
 
     /**
      */
-    public void getUser(ru.rb.onion.grpc.controller.proto.GetUserRequest request,
-        io.grpc.stub.StreamObserver<ru.rb.onion.grpc.controller.proto.GetUserResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetUserMethod(), responseObserver);
+    public void getRusUser(GetUserRequest request,
+                           io.grpc.stub.StreamObserver<GetUserResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getGetRusUserMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void saveEngUser(SaveUserRequest request,
+                            io.grpc.stub.StreamObserver<SaveUserResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getSaveEngUserMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void getEngUser(GetUserRequest request,
+                           io.grpc.stub.StreamObserver<GetUserResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getGetEngUserMethod(), responseObserver);
     }
 
     @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getSaveUserMethod(),
+            getSaveRusUserMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                ru.rb.onion.grpc.controller.proto.SaveUserRequest,
-                ru.rb.onion.grpc.controller.proto.SaveUserResponse>(
-                  this, METHODID_SAVE_USER)))
+                SaveUserRequest,
+                SaveUserResponse>(
+                  this, METHODID_SAVE_RUS_USER)))
           .addMethod(
-            getGetUserMethod(),
+            getGetRusUserMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                ru.rb.onion.grpc.controller.proto.GetUserRequest,
-                ru.rb.onion.grpc.controller.proto.GetUserResponse>(
-                  this, METHODID_GET_USER)))
+                GetUserRequest,
+                GetUserResponse>(
+                  this, METHODID_GET_RUS_USER)))
+          .addMethod(
+            getSaveEngUserMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                SaveUserRequest,
+                SaveUserResponse>(
+                  this, METHODID_SAVE_ENG_USER)))
+          .addMethod(
+            getGetEngUserMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                GetUserRequest,
+                GetUserResponse>(
+                  this, METHODID_GET_ENG_USER)))
           .build();
     }
   }
@@ -164,18 +256,34 @@ public final class UserServiceApiGrpc {
 
     /**
      */
-    public void saveUser(ru.rb.onion.grpc.controller.proto.SaveUserRequest request,
-        io.grpc.stub.StreamObserver<ru.rb.onion.grpc.controller.proto.SaveUserResponse> responseObserver) {
+    public void saveRusUser(SaveUserRequest request,
+                            io.grpc.stub.StreamObserver<SaveUserResponse> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSaveUserMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getSaveRusUserMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getUser(ru.rb.onion.grpc.controller.proto.GetUserRequest request,
-        io.grpc.stub.StreamObserver<ru.rb.onion.grpc.controller.proto.GetUserResponse> responseObserver) {
+    public void getRusUser(GetUserRequest request,
+                           io.grpc.stub.StreamObserver<GetUserResponse> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGetUserMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getGetRusUserMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void saveEngUser(SaveUserRequest request,
+                            io.grpc.stub.StreamObserver<SaveUserResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getSaveEngUserMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void getEngUser(GetUserRequest request,
+                           io.grpc.stub.StreamObserver<GetUserResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getGetEngUserMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -199,16 +307,30 @@ public final class UserServiceApiGrpc {
 
     /**
      */
-    public ru.rb.onion.grpc.controller.proto.SaveUserResponse saveUser(ru.rb.onion.grpc.controller.proto.SaveUserRequest request) {
+    public SaveUserResponse saveRusUser(SaveUserRequest request) {
       return blockingUnaryCall(
-          getChannel(), getSaveUserMethod(), getCallOptions(), request);
+          getChannel(), getSaveRusUserMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public ru.rb.onion.grpc.controller.proto.GetUserResponse getUser(ru.rb.onion.grpc.controller.proto.GetUserRequest request) {
+    public GetUserResponse getRusUser(GetUserRequest request) {
       return blockingUnaryCall(
-          getChannel(), getGetUserMethod(), getCallOptions(), request);
+          getChannel(), getGetRusUserMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public SaveUserResponse saveEngUser(SaveUserRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getSaveEngUserMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public GetUserResponse getEngUser(GetUserRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getGetEngUserMethod(), getCallOptions(), request);
     }
   }
 
@@ -232,23 +354,41 @@ public final class UserServiceApiGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<ru.rb.onion.grpc.controller.proto.SaveUserResponse> saveUser(
-        ru.rb.onion.grpc.controller.proto.SaveUserRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<SaveUserResponse> saveRusUser(
+        SaveUserRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSaveUserMethod(), getCallOptions()), request);
+          getChannel().newCall(getSaveRusUserMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<ru.rb.onion.grpc.controller.proto.GetUserResponse> getUser(
-        ru.rb.onion.grpc.controller.proto.GetUserRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<GetUserResponse> getRusUser(
+        GetUserRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getGetUserMethod(), getCallOptions()), request);
+          getChannel().newCall(getGetRusUserMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<SaveUserResponse> saveEngUser(
+        SaveUserRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getSaveEngUserMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<GetUserResponse> getEngUser(
+        GetUserRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getGetEngUserMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_SAVE_USER = 0;
-  private static final int METHODID_GET_USER = 1;
+  private static final int METHODID_SAVE_RUS_USER = 0;
+  private static final int METHODID_GET_RUS_USER = 1;
+  private static final int METHODID_SAVE_ENG_USER = 2;
+  private static final int METHODID_GET_ENG_USER = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -267,13 +407,21 @@ public final class UserServiceApiGrpc {
     @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_SAVE_USER:
-          serviceImpl.saveUser((ru.rb.onion.grpc.controller.proto.SaveUserRequest) request,
-              (io.grpc.stub.StreamObserver<ru.rb.onion.grpc.controller.proto.SaveUserResponse>) responseObserver);
+        case METHODID_SAVE_RUS_USER:
+          serviceImpl.saveRusUser((SaveUserRequest) request,
+              (io.grpc.stub.StreamObserver<SaveUserResponse>) responseObserver);
           break;
-        case METHODID_GET_USER:
-          serviceImpl.getUser((ru.rb.onion.grpc.controller.proto.GetUserRequest) request,
-              (io.grpc.stub.StreamObserver<ru.rb.onion.grpc.controller.proto.GetUserResponse>) responseObserver);
+        case METHODID_GET_RUS_USER:
+          serviceImpl.getRusUser((GetUserRequest) request,
+              (io.grpc.stub.StreamObserver<GetUserResponse>) responseObserver);
+          break;
+        case METHODID_SAVE_ENG_USER:
+          serviceImpl.saveEngUser((SaveUserRequest) request,
+              (io.grpc.stub.StreamObserver<SaveUserResponse>) responseObserver);
+          break;
+        case METHODID_GET_ENG_USER:
+          serviceImpl.getEngUser((GetUserRequest) request,
+              (io.grpc.stub.StreamObserver<GetUserResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -297,7 +445,7 @@ public final class UserServiceApiGrpc {
 
     @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return ru.rb.onion.grpc.controller.proto.UserService.getDescriptor();
+      return UserService.getDescriptor();
     }
 
     @Override
@@ -336,8 +484,10 @@ public final class UserServiceApiGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new UserServiceApiFileDescriptorSupplier())
-              .addMethod(getSaveUserMethod())
-              .addMethod(getGetUserMethod())
+              .addMethod(getSaveRusUserMethod())
+              .addMethod(getGetRusUserMethod())
+              .addMethod(getSaveEngUserMethod())
+              .addMethod(getGetEngUserMethod())
               .build();
         }
       }

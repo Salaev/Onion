@@ -20,6 +20,8 @@ message GetUserResponse {
 }
 
 service UserServiceApi {
-  rpc saveUser(SaveUserRequest) returns (SaveUserResponse);
-  rpc getUser(GetUserRequest) returns (GetUserResponse);
+  rpc saveRusUser(SaveUserRequest) returns (SaveUserResponse);
+  rpc getRusUser(GetUserRequest) returns (GetUserResponse);
+  rpc saveEngUser(SaveUserRequest) returns (SaveUserResponse);
+  rpc getEngUser(GetUserRequest) returns (GetUserResponse);
 }

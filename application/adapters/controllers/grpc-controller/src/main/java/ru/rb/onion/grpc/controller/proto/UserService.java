@@ -48,14 +48,20 @@ public final class UserService {
       "e\030\001 \001(\t\022\013\n\003age\030\002 \001(\005\"\036\n\020SaveUserResponse" +
       "\022\n\n\002id\030\001 \001(\003\"\036\n\016GetUserRequest\022\014\n\004name\030\001" +
       " \001(\t\">\n\017GetUserResponse\022\014\n\004name\030\001 \001(\t\022\013\n" +
-      "\003age\030\002 \001(\005\022\020\n\010identity\030\003 \001(\0032\367\001\n\016UserSer" +
-      "viceApi\022s\n\010saveUser\0222.ru.rb.onion.grpc.c" +
+      "\003age\030\002 \001(\005\022\020\n\010identity\030\003 \001(\0032\352\003\n\016UserSer" +
+      "viceApi\022v\n\013saveRusUser\0222.ru.rb.onion.grp" +
+      "c.controller.proto.SaveUserRequest\0323.ru." +
+      "rb.onion.grpc.controller.proto.SaveUserR" +
+      "esponse\022s\n\ngetRusUser\0221.ru.rb.onion.grpc" +
+      ".controller.proto.GetUserRequest\0322.ru.rb" +
+      ".onion.grpc.controller.proto.GetUserResp" +
+      "onse\022v\n\013saveEngUser\0222.ru.rb.onion.grpc.c" +
       "ontroller.proto.SaveUserRequest\0323.ru.rb." +
       "onion.grpc.controller.proto.SaveUserResp" +
-      "onse\022p\n\007getUser\0221.ru.rb.onion.grpc.contr" +
-      "oller.proto.GetUserRequest\0322.ru.rb.onion" +
-      ".grpc.controller.proto.GetUserResponseB\002" +
-      "P\001b\006proto3"
+      "onse\022s\n\ngetEngUser\0221.ru.rb.onion.grpc.co" +
+      "ntroller.proto.GetUserRequest\0322.ru.rb.on" +
+      "ion.grpc.controller.proto.GetUserRespons" +
+      "eB\002P\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

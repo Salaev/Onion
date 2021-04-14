@@ -4,7 +4,7 @@ import ru.rb.onion.domain.api.IdentityAdapter;
 import ru.rb.onion.domain.api.UserRepositoryAdapter;
 import ru.rb.onion.domain.entity.User;
 
-public class UserRusCase {
+public class UserRusCase implements UserCase {
 
     private final UserRepositoryAdapter adapter;
     private final IdentityAdapter identityAdapter;
