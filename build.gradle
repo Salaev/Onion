@@ -16,9 +16,14 @@ subprojects {
     dependencies {
         compileOnly "org.projectlombok:lombok:$lombokVersion"
         annotationProcessor "org.projectlombok:lombok:$lombokVersion"
-
+        testImplementation(
+                "org.junit.jupiter:junit-jupiter-api:5.7.1",
+                "org.junit.jupiter:junit-jupiter-engine:5.7.1",
+                "org.mockito:mockito-junit-jupiter:$mockitoJunitJupiterVersion",
+        )
     }
 }
+
 
 allprojects {
 
@@ -32,7 +37,9 @@ allprojects {
         compileOnly 'com.google.protobuf:protobuf-java:3.0.0-beta-1'
         // classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.5'
     }
-
+    test{
+        useJUnitPlatform()
+    }
 
 }
 

@@ -23,4 +23,7 @@ public class UserRepository {
         return users.values().stream().filter(s -> s.getName_user().equals(name)).findFirst();
     }
 
+    public Map<Integer, User> getUsers() {
+        return users;
+    }
 }
